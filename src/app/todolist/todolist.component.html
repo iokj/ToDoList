@@ -1,0 +1,13 @@
+<div>
+    <p>My Task Today</p>
+    <ul>
+        <li *ngFor="let item of allCourses">
+        <span >{{ item }}</span>
+        <button (click)="delCourse(item)">Delete</button>
+     
+        </li>
+        </ul>
+    Task : <input type="text" id="course" name="course" [(ngModel)]="newCourse">
+    <button (click)="addCourse()">Add</button>
+
+</div>
